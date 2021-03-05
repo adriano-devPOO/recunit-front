@@ -1,0 +1,8 @@
+.footer{
+    position:fixed;
+    bottom: 0;
+    justify-content: flex-end;
+    font-size: 0.8rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 5%;
+}
