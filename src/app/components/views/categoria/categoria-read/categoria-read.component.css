@@ -3,6 +3,10 @@
     margin: 1.4rem auto auto auto;
 }
 
+button{
+    margin-bottom: 1rem;
+}
+
 .title{
     text-align: center;
     margin-bottom: 3rem;
@@ -16,4 +20,22 @@
 
 .table{
     width: 100%;
+}
+
+.livros{
+    color:rgb(0, 21, 209);
+    margin-left: .6rem;
+}
+
+.edit{
+    color: rgb(211, 201, 70);
+}
+
+.delete{
+    color: rgb(211, 37, 37);
+    margin-left: .5rem;
+}
+
+.mat-header{
+    width: 5rem;
 }
