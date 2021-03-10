@@ -1,10 +1,19 @@
-.container{
+.container {
     height: 85%;
-    justify-content: left;
-
 }
 
-i{
-    padding: 0%;
-    width: 25px;
+i {
+    padding-right: .6rem;
+}
+
+.side {
+    width: 12%;
+}
+
+mat-nav-list {
+    justify-content: center;
+}
+
+.nav {
+    width: 50%;
 }

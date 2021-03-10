@@ -23,16 +23,15 @@ export class CategoriaDeleteComponent implements OnInit {
     this.findById()
   }
 
-  findById(): void{
+  findById(): void {
     this.service.findById(this.categoria.id!).subscribe((resposta) => {
       this.categoria.nome = resposta.nome
       this.categoria.descricao = resposta.descricao
-      console.log(resposta)
     })
   }
 
-  delete(): void{
-    this.service.delete(this.categoria.id!).subscribe((resposta) =>{
+  delete(): void {
+    this.service.delete(this.categoria.id!).subscribe((resposta) => {
       this.router.navigate(['categorias'])
       this.service.mensagem('Categoria deletada com sucesso!')
     }, err => {
@@ -40,7 +39,8 @@ export class CategoriaDeleteComponent implements OnInit {
     })
   }
 
-  cancel(): void{
+  cancel(): void {
     this.router.navigate(['categorias'])
   }
+
 }
