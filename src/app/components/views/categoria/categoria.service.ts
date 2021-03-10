@@ -33,6 +33,10 @@ export class CategoriaService {
     return this.http.delete<void>('https://recup-pos-unit.herokuapp.com/categorias/' + id)
   }
 
+  update(categoria: Categoria): Observable<void>{
+    return this.http.put<void>('https://recup-pos-unit.herokuapp.com/categorias/' + categoria.id, categoria)
+  }
+
   mensagem(str: String): void{
     this._snack.open(`${str}`, 'OK', {
       horizontalPosition: 'end',
